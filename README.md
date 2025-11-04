@@ -26,7 +26,7 @@ UpgradeTypes
 ## Usage:
 Game elements (GameObjects or just plain classes) implements the IUpgradeable interface and the following signature:
 
-List<Upgrade> - a list of the elements upgrades, these are easiest to create in the Unity inspector.
+"List<Upgrade>" - a list of the elements upgrades, these are easiest to create in the Unity inspector.
 
 void Upgrade(upgrade Upgrade) method - this method receives an upgrade selected by the player.
 
@@ -51,6 +51,7 @@ The UpgradeManager handles all logic; when upgrades should be surgested and how 
 
 ## Upgrade-types enum:
 These are the upgrades, the list is expanded as needed, and the types can be used across different elements, generic or specific types are both ok.
+
 
 
 
