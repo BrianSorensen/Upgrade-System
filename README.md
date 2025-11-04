@@ -1,6 +1,6 @@
 ﻿# Upgrade-System 
 
-This is a prototype for the latest version of my upgrade-system.
+This is a prototype for the latest version of my upgrade-system. This system is specific for games with "roguelike" updates, meaning a flow of level-based updates with random choices.
 
 ### This version is improved by:
 
@@ -51,6 +51,7 @@ The UpgradeManager handles all logic; when upgrades should be surgested and how 
 
 ## Upgrade-types enum:
 These are the upgrades, the list is expanded as needed, and the types can be used across different elements, generic or specific types are both ok.
+
 
 
 
