@@ -30,7 +30,7 @@ Game elements (GameObjects or just plain classes) implements the IUpgradeable in
 
 `void Upgrade(upgrade Upgrade)` method - this method receives an upgrade selected by the player.
 
-`int startedAtLevel` - this is set using upgradeManager.level when the game element is "startet" marking the zero point for "relative to start" upgrades.
+`int startedAtLevel` - this is set using `upgradeManager.level` when the game element is "startet" marking the zero point for "relative to start" upgrades.
 
 ### Interaction with the game:
 
@@ -51,6 +51,7 @@ The UpgradeManager handles all logic; when upgrades should be surgested and how 
 
 ## Upgrade-types enum:
 These are the upgrades, the list is expanded as needed, and the types can be used across different elements, generic or specific types are both ok.
+
 
 
 
