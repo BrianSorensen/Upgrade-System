@@ -27,6 +27,10 @@ public class MainCannon : MonoBehaviour, IUpgradeable
 
     public MainCannon()
     {
+    }
+
+    void Start()
+    {
         upgradeManager = UpgradeManager.getInstance();
         upgradeManager.addUpgradeable(this);
         _startedAtLevel = upgradeManager.level;

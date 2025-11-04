@@ -27,6 +27,10 @@ public class WeaponSlot : MonoBehaviour, IUpgradeable
 
   public WeaponSlot()
   {
+  }
+
+  void Start()
+  {
     upgradeManager = UpgradeManager.getInstance();
     upgradeManager.addUpgradeable(this);
     _startedAtLevel = upgradeManager.level;

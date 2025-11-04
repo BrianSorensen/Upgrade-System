@@ -42,6 +42,11 @@ public class Ship : MonoBehaviour, IUpgradeable
 
   public Ship()
   {
+
+  }
+
+  void Start()
+  {
     upgradeManager = UpgradeManager.getInstance();
     upgradeManager.addUpgradeable(this);
     _startedAtLevel = upgradeManager.level;
