@@ -2,7 +2,7 @@
 
 This is a prototype for the latest version of my upgrade-system.
 
-This version is improved by:
+### This version is improved by:
 
 Game elements informing the system of its upgrades
 
@@ -15,8 +15,11 @@ The project contains the upgrade-system and a very simple demo setup. The demo s
 ## The Upgrade-system contains these key elements:
 
 IUpgradeable interface
+
 Upgrade class
+
 UpgradeManager
+
 UpgradeTypes
 
 
@@ -42,6 +45,7 @@ The UpgradeManager handles all logic; when upgrades should be surgested and how 
 
 ## Upgrade-types enum:
 These are the upgrades, the list is expanded as needed, and the types can be used across different elements, generic or specific types are both ok.
+
 
 
 
