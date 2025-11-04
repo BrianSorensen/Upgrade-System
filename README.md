@@ -26,23 +26,23 @@ UpgradeTypes
 ## Usage:
 Game elements (GameObjects or just plain classes) implements the IUpgradeable interface and the following signature:
 
-"List<Upgrade>" - a list of the elements upgrades, these are easiest to create in the Unity inspector.
+`List<Upgrade>` - a list of the elements upgrades, these are easiest to create in the Unity inspector.
 
-void Upgrade(upgrade Upgrade) method - this method receives an upgrade selected by the player.
+`void Upgrade(upgrade Upgrade)` method - this method receives an upgrade selected by the player.
 
 int startedAtLevel - this is set using upgradeManager.level when the game element is "startet" marking the zero point for "relative to start" upgrades.
 
 ### Interaction with the game:
 
-Core game informs UpgradeManager of XP increase with the addXp() method and the manager will do the rest.
+Core game informs UpgradeManager of XP increase with the `addXp()` method and the manager will do the rest.
 
 In order to present the player with choices, a choice UI class have to be developed as part of the game and implemented in the UpgradeManager (see TODO im manager)
 
 
 ## Adding IUpgradeable instance to the UpgradeManager.
-The UpgradeManager is implemented as a singleton and the instance can be received by UpgradeManager.getInstance();
+The UpgradeManager is implemented as a singleton and the instance can be received by `UpgradeManager.getInstance();`
 
-To add a element to the UpgradeManager use upgradeManager.addUpgradeable(this) and in the case you want to remove them use  upgradeManager.removeUpgradeable(this);
+To add a element to the UpgradeManager use `upgradeManager.addUpgradeable(this)` and in the case you want to remove them use `upgradeManager.removeUpgradeable(this);`
 
 ## Upgrade:
 An Upgrade contains meta data for the upgrade, used by the upgradeManager logic, the element implementation and choice UI.
@@ -51,6 +51,7 @@ The UpgradeManager handles all logic; when upgrades should be surgested and how 
 
 ## Upgrade-types enum:
 These are the upgrades, the list is expanded as needed, and the types can be used across different elements, generic or specific types are both ok.
+
 
 
 
