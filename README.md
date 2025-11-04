@@ -32,6 +32,12 @@ void Upgrade(upgrade Upgrade) method - this method receives an upgrade selected 
 
 int startedAtLevel - this is set using upgradeManager.level when the game element is "startet" marking the zero point for "relative to start" upgrades.
 
+### Interaction with the game:
+
+Core game informs UpgradeManager of XP increase with the addXp() method and the manager will do the rest.
+
+In order to present the player with choices, a choice UI class have to be developed as part of the game and implemented in the UpgradeManager (see TODO im manager)
+
 
 ## Adding IUpgradeable instance to the UpgradeManager.
 The UpgradeManager is implemented as a singleton and the instance can be received by UpgradeManager.getInstance();
@@ -45,6 +51,7 @@ The UpgradeManager handles all logic; when upgrades should be surgested and how 
 
 ## Upgrade-types enum:
 These are the upgrades, the list is expanded as needed, and the types can be used across different elements, generic or specific types are both ok.
+
 
 
 
