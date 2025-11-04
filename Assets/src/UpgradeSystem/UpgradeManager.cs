@@ -19,7 +19,9 @@ public class UpgradeManager
 
     public float levelMultiplier = 1.07f;
 
-    private List<IUpgradeable> activeUpgradeables;
+    public IUpgradeUI upgradeUI;
+
+    private List<IUpgradeable> activeUpgradeables = new List<IUpgradeable>();
 
     private List<Upgrade> currentUpgrades;
 
@@ -44,9 +46,14 @@ public class UpgradeManager
 
             nextLevel += nextLevelSpeed;
             nextLevelSpeed = Mathf.RoundToInt((float)nextLevelSpeed * levelMultiplier);
-
-            //TODO
-            //UpgradeUI.showChoices(currentUpgrades);
+            if (currentUpgrades.Count == 3)
+            {
+                upgradeUI.ShowChoices(currentUpgrades);
+            }
+            else
+            {
+                Debug.Log("----- Game out of upgrades");
+            }
         }
     }
 

@@ -1,5 +1,10 @@
 using System.Collections.Generic;
 
+public interface IUpgradeUI
+{
+  void ShowChoices(List<Upgrade> upgrades);
+}
+
 public interface IUpgradeable
 {
 
