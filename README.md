@@ -10,7 +10,7 @@ Avoiding Upgrade-system having knowledge of specific game elements.
 
 A seamless upgrade flow for game elements.
 
-The project contains the upgrade-system and a very simple demo setup. The demo setup does not contain any gameplay or interaction, but only contains placeholder game elements with some upgrades.
+The project contains the upgrade-system and a very simple demo setup. The demo setup does not contain any gameplay or interaction, but just a simple game simulation (console) with placeholder IUpgradeable game elements.
 
 ## The Upgrade-system contains these key elements:
 
@@ -51,6 +51,7 @@ The UpgradeManager handles all logic; when upgrades should be surgested and how 
 
 ## Upgrade-types enum:
 These are the upgrades, the list is expanded as needed, and the types can be used across different elements, generic or specific types are both ok.
+
 
 
 
