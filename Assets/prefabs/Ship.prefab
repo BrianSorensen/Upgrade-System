@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8945114710259484078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5062106395509024803}
+  - component: {fileID: 2108844112814905593}
+  m_Layer: 0
+  m_Name: Ship
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5062106395509024803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8945114710259484078}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2108844112814905593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8945114710259484078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc30a6aabc4dfa64b836a6ae8863c6bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponSlotPrefab: {fileID: 2860812259940918834, guid: bb5eb30c1cc01744594fa16d1a520fd5, type: 3}
+  upgrades:
+  - startLevel: 0
+    startLevelValue: 0
+    upgradeType: 0
+    value: 1.1
+    valueType: 1
+    maxCount: 10
+    currentCount: 0
+    upgradeValue: 0
+    heading: Boost your health
+    desc: Add 10%
+    icon: {fileID: 0}
+  - startLevel: 0
+    startLevelValue: 0
+    upgradeType: 1
+    value: 1.1
+    valueType: 1
+    maxCount: 10
+    currentCount: 0
+    upgradeValue: 0
+    heading: Boost your shield
+    desc: Add 10%
+    icon: {fileID: 0}
+  - startLevel: 0
+    startLevelValue: 0
+    upgradeType: 2
+    value: 1
+    valueType: 0
+    maxCount: 1
+    currentCount: 0
+    upgradeValue: 2
+    heading: NEW WEAPON SLOT
+    desc: Add another weapon slot to your ship
+    icon: {fileID: 0}
+  - startLevel: 0
+    startLevelValue: 0
+    upgradeType: 3
+    value: 1
+    valueType: 0
+    maxCount: 1
+    currentCount: 0
+    upgradeValue: 2
+    heading: NEW WEAPON SLOT
+    desc: Add another weapon slot to your ship
+    icon: {fileID: 0}

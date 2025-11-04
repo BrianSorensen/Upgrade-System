@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &535257896978092457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2096434432363908738}
+  - component: {fileID: 8798430525846847840}
+  m_Layer: 0
+  m_Name: MainCannon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2096434432363908738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535257896978092457}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8798430525846847840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535257896978092457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c16fcb07a0c2b7344b35da7c17e9f53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrades:
+  - startLevel: 0
+    startLevelValue: 0
+    upgradeType: 4
+    value: 1.1
+    valueType: 1
+    maxCount: 15
+    currentCount: 0
+    upgradeValue: 0
+    heading: FIRE RATE
+    desc: Shoot faster!
+    icon: {fileID: 0}
+  - startLevel: 0
+    startLevelValue: 0
+    upgradeType: 5
+    value: 1.1
+    valueType: 1
+    maxCount: 15
+    currentCount: 0
+    upgradeValue: 0
+    heading: Cannon damage!
+    desc: add power to your shots!
+    icon: {fileID: 0}
+  - startLevel: 0
+    startLevelValue: 0
+    upgradeType: 6
+    value: 1
+    valueType: 0
+    maxCount: 3
+    currentCount: 0
+    upgradeValue: 1
+    heading: Add shot!
+    desc: Add another shot to your cannon
+    icon: {fileID: 0}
